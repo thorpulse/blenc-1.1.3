@@ -1,0 +1,8 @@
+// $Id: config.w32 330695 2013-06-28 08:21:25Z ab $
+// vim:ft=javascript
+
+ARG_ENABLE("blenc", "enable blenc support", "no");
+
+if (PHP_BLENC != "no") {
+	EXTENSION("blenc", "blenc.c bf_algo.c");
+}
